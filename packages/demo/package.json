@@ -1,0 +1,36 @@
+{
+  "name": "@code-preview/demo",
+  "version": "0.0.0",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "storybook": "storybook dev -p 6006 --ci",
+    "build-storybook": "storybook build",
+    "test": "exit 0"
+  },
+  "dependencies": {
+    "@code-preview/compiler": "workspace:*",
+    "@code-preview/formatter": "workspace:*",
+    "@code-preview/react": "workspace:*",
+    "@monaco-editor/loader": "*",
+    "@monaco-editor/react": "^4.4.6",
+    "esbuild": "^0.17.5",
+    "esbuild-wasm": "^0.17.5",
+    "monaco-editor": "^0.34.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.0-beta.46",
+    "@storybook/react": "^7.0.0-beta.46",
+    "@storybook/react-vite": "^7.0.0-beta.46",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.0.1",
+    "prop-types": "^15.8.1",
+    "storybook": "^7.0.0-beta.46",
+    "typescript": "^4.9.5",
+    "vite": "^4.0.4"
+  }
+}
