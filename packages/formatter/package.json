@@ -1,0 +1,24 @@
+{
+  "name": "@code-preview/formatter",
+  "version": "0.0.0",
+  "license": "ISC",
+  "type": "module",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist; rollup -c",
+    "test": "exit 0"
+  },
+  "devDependencies": {
+    "@types/prettier": "^2.7.2",
+    "esbuild": "^0.17.5",
+    "prettier": "^2.8.3",
+    "rollup": "^3.12.1",
+    "rollup-plugin-dts": "^5.1.1",
+    "rollup-plugin-esbuild": "^5.0.0",
+    "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "prettier": "*"
+  }
+}

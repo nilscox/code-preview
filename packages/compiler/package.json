@@ -1,0 +1,24 @@
+{
+  "name": "@code-preview/compiler",
+  "version": "0.0.0",
+  "license": "ISC",
+  "type": "module",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist; rollup -c",
+    "test": "exit 0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.17.5",
+    "esbuild-wasm": "^0.17.5",
+    "rollup": "^3.12.1",
+    "rollup-plugin-dts": "^5.1.1",
+    "rollup-plugin-esbuild": "^5.0.0",
+    "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "esbuild": "*",
+    "esbuild-wasm": "*"
+  }
+}
